@@ -2,6 +2,9 @@
 ### Helpful when building parameterized uri's
 ### This does not cover all character encodings...
 
+- input string = LGA Terminal B
+- output string = LGA%20Terminal%20B
+
 ```javascript
 function Permalink(string){
     var space = Replace(string, ' ', '%20')
@@ -17,4 +20,3 @@ function Permalink(string){
 
 var permalink = Permalink($feature.POI_Name)
 return Text(permalink)
-'''
